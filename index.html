@@ -1,1 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Shopping site for Moblie,Grossary</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="data:image/jpeg;base64,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">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/utilis.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="flipkart-logo.png" alt="">
+            </div>
+            <ul>
+                <li> <a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="search">
+                <input type="text" name="" id="" placeholder="Search Here">
+                <button class="btn">Search</button>
+            </div>
+            <button class="btn1">Login</button>
+            <div class="text">Become a Seller</div>
+            <div class="select">
+                <label for="cars">More</label>
+                <select name="cars" id="cars">
+                    <option value="volvo"></option>
+                    <option value="saab"></option>
+                    <option value="opel"></option>
+                    <option value="audi"></option>
+                </select>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <div class="slider">
+                <img src="https://source.unsplash.com/1300x300/?shopping, ecommerce" alt="">
+            </div>
+            <div class="card">
+                <h2 class="my-2">Fashion Top Deals</h2>
+                <hr>
+                <br>
+                <br>
+                <div class="cards">
+                    <div class="card-item">
+                        <img src="https://images.bewakoof.com/t320/blue-vibes-half-sleeve-t-shirt-black-298517-1637995543-1.jpg" alt="" width=160px>
+                        <div class="lines">
+                            <p class="text-center my-1">THE BEAR HOUSE</p>
+                            <p class="text-center my-1">Min 30% off</p>
+                            <p class="text-center my-1">Grab Now!</p>
+                        </div>
+                    </div>
+                    <div class="card-item">
+                        <img src="https://images.bewakoof.com/t320/winter-moss-men-s-solid-jogger-451579-1646674793-1.jpg" alt="" width=160px>
+                        <div class="lines">
+                            <p class="text-center my-1">Jogger</p>
+                            <p class="text-center my-1">Min 20% off</p>
+                            <p class="text-center my-1">Grab Now!</p>
+                        </div>
+                    </div>
+                    <div class="card-item">
+                        <img src="https://images.bewakoof.com/t320/men-s-blue-beast-typography-oversized-fit-t-shirt-459976-1649951470-1.jpg" alt="" width=160px>
+                        <div class="lines">
+                            <p class="text-center my-1">GYMtshirts</p>
+                            <p class="text-center my-1">Min 40% off</p>
+                            <p class="text-center my-1">Grab Now!</p>
+                        </div>
+                    </div>
+                    <div class="card-item">
+                        <img src="https://images.bewakoof.com/t320/men-s-mandarin-collar-full-sleeves-shirt-361291-1638217335-6.jpg" alt="" width=160px>
+                        <div class="lines">
+                            <p class="text-center my-1">Shirts</p>
+                            <p class="text-center my-1">Min 20% off</p>
+                            <p class="text-center my-1">Grab Now!</p>
+                        </div>
+                    </div>
+                    <div class="card-item">
+                        <img src="https://images.bewakoof.com/t320/white-print-on-placket-full-sleeve-shirt-352185-1651500785-1.jpg" alt="" width=160px>
+                        <div class="lines">
+                            <p class="text-center my-1">Men shirts</p>
+                            <p class="text-center my-1">Min 20% off</p>
+                            <p class="text-center my-1">Grab Now!</p>
+                        </div>
+                    </div>
+                    <div class="card-item">
+                        <img src="https://images.bewakoof.com/t320/men-s-solid-maroon-long-kurta-317795-1635869365-5.jpg" alt="" width=160px>
+                        <div class="lines">
+                            <p class="text-center my-1">Kurtas</p>
+                            <p class="text-center my-1">Min 10% off</p>
+                            <p class="text-center my-1">Grab Now!</p>
+                        </div>
+                    </div>
+
+                    <div class="card-item">
+                        <img src="https://images.bewakoof.com/t320/men-s-green-flat-flip-flops-468264-1643276879-1.jpg" alt="" width=160px>
+                        <div class="lines">
+                            <p class="text-center my-1"> pampySlider</p>
+                            <p class="text-center my-1">Min 20% off</p>
+                            <p class="text-center my-1">Grab Now!</p>
+                        </div>
+                    </div>
+            
+                </div>
+                <div class="cards">
+                    <div class="card-item">
+                        <img src="https://images.bewakoof.com/t320/khaki-snap-pocket-cargo-pants-433780-1645600555-1.jpg" alt="" width=160px>
+                        <div class="lines">
+                            <p class="text-center my-1">khaki snap cargo pant</p>
+                            <p class="text-center my-1">Min 50% off</p>
+                            <p class="text-center my-1">Grab Now!</p>
+                        </div>
+                    </div>
+                    <div class="card-item">
+                        <img src="https://images.bewakoof.com/t320/tan-solid-pu-jacket-393798-1638435394-1.jpg" alt="" width=160px>
+                        <div class="lines">
+                            <p class="text-center my-1">Lather jacket</p>
+                            <p class="text-center my-1">Min 30% off</p>
+                            <p class="text-center my-1">Grab Now!</p>
+                        </div>
+                    </div>
+                    <div class="card-item">
+                        <img src="https://images.bewakoof.com/t320/white-full-sleeve-t-shirt-1093-1637995974-1.jpg" alt="" width=160px>
+                        <div class="lines">
+                            <p class="text-center my-1">Mens white tshirt</p>
+                            <p class="text-center my-1">Min 20% off</p>
+                            <p class="text-center my-1">Grab Now!</p>
+                        </div>
+                    </div>
+                    <div class="card-item">
+                        <img src="https://images.bewakoof.com/t320/distinct-black-green-men-s-flip-flop-449127-1638450805-1.jpg" alt="" width=160px>
+                        <div class="lines">
+                            <p class="text-center my-1">fipflop </p>
+                            <p class="text-center my-1">Min 10% off</p>
+                            <p class="text-center my-1">Grab Now!</p>
+                        </div>
+                    </div>
+                    <div class="card-item">
+                        <img src="https://images.bewakoof.com/t320/men-s-blue-skinny-fit-jeans-496037-1651676043-1.jpg" alt="" width=160px>
+                        <div class="lines">
+                            <p class="text-center my-1">Mens blue jeans</p>
+                            <p class="text-center my-1">Min 17% off</p>
+                            <p class="text-center my-1">Grab Now!</p>
+                        </div>
+                    </div>
+                    <div class="card-item">
+                        <img src="https://images.bewakoof.com/t320/bridal-rose-full-sleeve-flat-knit-sweater-men-s-mflk0a-solid-flat-knits-sweater-plain-365028-1630495322-1.jpg" alt="" width=160px>
+                        <div class="lines">
+                            <p class="text-center my-1">Sweetshirt</p>
+                            <p class="text-center my-1">Min 30% off</p>
+                            <p class="text-center my-1">Grab Now!</p>
+                        </div>
+                    </div>
+
+                    <div class="card-item">
+                        <img src="https://images.bewakoof.com/t320/men-s-lilac-waffle-henley-t-shirt-464917-1652959941-1.jpg" alt="" width=160px>
+                        <div class="lines">
+                            <p class="text-center my-1">Henley Tshirt</p>
+                            <p class="text-center my-1">Min 20% off</p>
+                            <p class="text-center my-1">Grab Now!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <h2 class="my-2">TV& Appliances</h2>
+                <hr>
+                <br>
+                <br>
+                <div class="cards">
+                    <div class="card-item">
+                        <img src="https://rukminim1.flixcart.com/image/312/312/l2jcccw0/television/d/i/m/43fhdadmvvee-motorola-original-imagdv4wrgtupkhw.jpeg?q=70"
+                            alt="" width=160px>
+                        <div class="lines">
+                            <p class="text-center my-1">MOTOROLA Revou2 109cm</p>
+                            <p class="text-center my-1">27% off</p>
+                            <p class="text-center my-1">Grab Now!</p>
+                        </div>
+                    </div>
+                    <div class="card-item">
+                        <img src="https://rukminim1.flixcart.com/image/312/312/kzfvzww0/television/e/b/b/32hd2a00-32-y1s-oneplus-original-imagbgcewfqywgk7.jpeg?q=70"
+                            alt="" width=160px>
+                        <div class="lines">
+                            <p class="text-center my-1">ONE Plus TV</p>
+                            <p class="text-center my-1">Min 25% off</p>
+                            <p class="text-center my-1">Grab Now!</p>
+                        </div>
+                    </div>
+                    <div class="card-item">
+                        <img src="https://rukminim1.flixcart.com/image/312/312/l2f20sw0/television/k/s/l/l43m7-eain-mi-original-imagdrtndgnrymr9.jpeg?q=70"
+                            alt="" width=160px>
+                        <div class="lines">
+                            <p class="text-center my-1">Xiomi TV</p>
+                            <p class="text-center my-1">Min 20% off</p>
+                            <p class="text-center my-1">Grab Now!</p>
+                        </div>
+                    </div>
+                    <div class="card-item">
+                        <img src="https://rukminim1.flixcart.com/image/312/312/l0mr7gw0/television/9/k/i/-original-imagccy3vh26rts4.jpeg?q=70"
+                            alt="" width=160px>
+                        <div class="lines">
+                            <p class="text-center my-1">Acer TV</p>
+                            <p class="text-center my-1">Min 17% off</p>
+                            <p class="text-center my-1">Grab Now!</p>
+                        </div>
+                    </div>
+                    <div class="card-item">
+                        <img src="https://rukminim1.flixcart.com/image/312/312/kqidx8w0/television/o/h/9/43fa0a00-oneplus-original-imag4gy9perzvrdv.jpeg?q=70"
+                            alt="" width=160px>
+                        <div class="lines">
+                            <p class="text-center my-1">ONE PLUS 12 </p>
+                            <p class="text-center my-1">Min 50% off</p>
+                            <p class="text-center my-1">Grab Now!</p>
+                        </div>
+                    </div>
+                    <div class="card-item">
+                        <img src="https://rukminim1.flixcart.com/image/312/312/krntoy80/television/u/d/y/a-3200s-adsun-original-imag5edguuyn54fh.jpeg?q=70"
+                            alt="" width=160px>
+                        <div class="lines">
+                            <p class="text-center my-1">ADSUN TV</p>
+                            <p class="text-center my-1">Min 40% off</p>
+                            <p class="text-center my-1">Grab Now!</p>
+                        </div>
+                    </div>
+
+                    <div class="card-item">
+                        <img src="https://rukminim1.flixcart.com/image/312/312/kbs9k7k0/television/c/j/3/samsung-ua32t4340akxxl-original-imaft25qdysfsq7k.jpeg?q=70"
+                            alt="" width=160px>
+                        <div class="lines">
+                            <p class="text-center my-1">SAMSUNG TV</p>
+                            <p class="text-center my-1">15% off</p>
+                            <p class="text-center my-1">Grab Now!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="cards">
+                    <div class="card-item">
+                        <img src="https://rukminim1.flixcart.com/image/612/612/kuof5ow0/trimmer/7/z/f/0-5-10-mm-bt3101-15-stainless-steel-cordless-philips-original-imag7r4r7ztgnuyk.jpeg?q=70"
+                            alt="" width=160px>
+                        <div class="lines">
+                            <p class="text-center my-1">PHILIPS Trimmer</p>
+                            <p class="text-center my-1">Min 30% off</p>
+                            <p class="text-center my-1">Grab Now!</p>
+                        </div>
+                    </div>
+                    <div class="card-item">
+                        <img src="https://rukminim1.flixcart.com/image/612/612/l111lzk0/iron/s/8/k/-original-imagczpqsuwmkqz5.jpeg?q=70"
+                            alt="" width=160px>
+                        <div class="lines">
+                            <p class="text-center my-1">Orient Elecric</p>
+                            <p class="text-center my-1">Min 20% off</p>
+                            <p class="text-center my-1">Grab Now!</p>
+                        </div>
+                    </div>
+                    <div class="card-item">
+                        <img src="https://rukminim1.flixcart.com/image/612/612/l2ghgnk0/induction-cook-top/s/t/z/-original-imagdsgnauhuvskd.jpeg?q=70"
+                            alt="" width=160px>
+                        <div class="lines">
+                            <p class="text-center my-1">Prestise</p>
+                            <p class="text-center my-1">Min 40% off</p>
+                            <p class="text-center my-1">Grab Now!</p>
+                        </div>
+                    </div>
+                    <div class="card-item">
+                        <img src="https://rukminim1.flixcart.com/image/612/612/kltryq80/air-cooler/0/l/9/snowcrest-85-h-hindware-original-imagyv9hcdphenu6.jpeg?q=70"
+                            alt="" width=160px>
+                        <div class="lines">
+                            <p class="text-center my-1">Hindware</p>
+                            <p class="text-center my-1">Min 30% off</p>
+                            <p class="text-center my-1">Grab Now!</p>
+                        </div>
+                    </div>
+
+                    <div class="card-item">
+                        <img src="https://rukminim1.flixcart.com/image/612/612/kv9urgw0/weighing-scale/4/h/c/heavy-duty-electronic-thick-tempered-glass-lcd-display-square-original-imag87ghdpzxgcsz.jpeg?q=70"
+                            alt="" width=160px>
+                        <div class="lines">
+                            <p class="text-center my-1">Landvk electric</p>
+                            <p class="text-center my-1">Min 60% off</p>
+                            <p class="text-center my-1">Grab Now!</p>
+                        </div>
+                    </div>
+                    <div class="card-item">
+                        <img src="https://rukminim1.flixcart.com/image/612/612/knt7zbk0/electric-kettle/5/g/j/atlas-1-8l-stainless-steel-electric-kettle-atlas-1-8-pkoss-1-8-original-imag2egygrbg2jq4.jpeg?q=70"
+                            alt="" width=160px>
+                        <div class="lines">
+                            <p class="text-center my-1">Prestise Atlas</p>
+                            <p class="text-center my-1">Min 30% off</p>
+                            <p class="text-center my-1">Grab Now!</p>
+                        </div>
+                    </div>
+                    <div class="card-item">
+                        <img src="https://rukminim1.flixcart.com/image/612/612/k5y7tzk0/hand-blender/t/x/s/atul-enterprise-egg-beater-egg-beater-original-imafzgtfuufx4dms.jpeg?q=70"
+                            alt="" width=160px>
+                        <div class="lines">
+                            <p class="text-center my-1">Landvk electric</p>
+                            <p class="text-center my-1">Min 60% off</p>
+                            <p class="text-center my-1">Levis</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+           
+        </div>
+        </div>
+        </div>
+    </main>
+    <footer class="flex-all-center">
+        <p>copyright &copy; Mycart.com</p>
+    </footer>
+</body>
+
+</html>
